@@ -1,0 +1,87 @@
+:root {
+    --primary: #98b2bf;
+    --accent-light: #e2c733;
+    --accent-dark: #b53f56;
+    --shade-light: #f7f9f8;
+    --shade-dark: #29243e;
+}
+
+body {
+    background-color: var(--primary);
+    margin-bottom:50px;
+}
+
+button {
+    border-style: none;
+}
+
+.mobile-fixed-nav {
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 100vh;
+    margin-top: -50px;
+    margin-left: -8px;
+}
+
+.btn-hamburger-menu {
+    width: 50px;
+    height: 50px;
+    background-color: var(--shade-dark);
+}
+
+.hamburger-icon {
+    width: 30px;
+    margin-top: -6px;
+    margin-left: 2px;
+}
+
+.span-hamburger {
+    display: block;
+    background-color: var(--shade-light);
+    height: 3px;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.btn-signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.primary {
+    background-color: var(--primary);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+.btn-dark {
+    background-color: var(--accent-dark);
+    color: var(--shade-light);
+}
+.btn-light {
+    background-color: var(--accent-light);
+    color: var(--shade-dark);
+}
+.text-dark {
+    color: var(--shade-dark);
+}
+.text-light {
+    color: var(--shade-light);
+}
+
+
+
+
+@media (min-width: 768px) {
+    body {
+        margin-bottom: 0px;
+    }
+    
+    .mobile-fixed-nav {
+        display: none;
+    }
+
+}
