@@ -1,0 +1,16 @@
+Based on https://www.zoho.com/crm/
+Mobile-First Product Homepage
+
+Clickable Logo/Home link
+Title/Company Description/Image
+Multi-column testimonials and row of company logos
+Sales copy summary with image carousel and link to more info
+More sales copy with autoplaying muted video clip
+Call to action pane with button link to feature list
+Testimonial with link to YouTube video popup
+Awards and ratings in individual cards
+Testimonial Carousel
+Call to action panel with plans&pricing link
+Footer with links to contact us, privacy policy etc. and copyright
+Fixed footer with hamburger menu and red signup link
+Fixed bottom right chat/contact form
