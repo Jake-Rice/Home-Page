@@ -13,6 +13,7 @@ body {
 
 button {
     border-style: none;
+    cursor:pointer;
 }
 
 .mobile-fixed-nav {
@@ -32,17 +33,42 @@ button {
 }
 
 .hamburger-icon {
+    position: absolute;   
     width: 30px;
-    margin-top: -6px;
-    margin-left: 2px;
-}
-
-.span-hamburger {
-    display: block;
+    height: 4px;
+    border-radius: 4px;
     background-color: var(--shade-light);
-    height: 3px;
+    transition: all .5s ease-in-out;
+}
+.hamburger-icon:before, .hamburger-icon:after {    
+    content: '';
+    position: absolute;    
+    background-color: var(--shade-light);
     width: 100%;
-    margin-top: 6px;
+    height: 4px;
+    border-radius: 4px;
+    left: 0px;
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+.hamburger-icon:before {
+    bottom: 10px;    
+}
+.hamburger-icon:after {
+    top: 10px;
+}
+.menu-is-open .hamburger-icon{
+    transition: all .5s ease-in-out;
+    transform: translateX(-30px);
+    background: transparent;
+}
+.menu-is-open .hamburger-icon:before{
+    transition: all .5s ease-in-out;
+    transform: translate(30px, 10px) rotate(45deg);
+}
+.menu-is-open .hamburger-icon:after{
+    transition: all .5s ease-in-out;
+    transform: translate(30px, -10px) rotate(-45deg);
 }
 
 .btn-signup {
