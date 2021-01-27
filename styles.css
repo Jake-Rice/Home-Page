@@ -6,6 +6,10 @@
     --shade-dark: #29243e;
 }
 
+* {    
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--primary);
     margin-bottom:50px;
@@ -37,19 +41,18 @@ button {
     bottom: 50px;
     margin-left: -8px;
     transition: transform .25s ease-out;
+    transform-origin: bottom;
 }
 .menu li {
     font-size: 18;
 }
 
 .menu-hidden {
-    transform: translateY(450px);
+    transform: scale(1,0);
+    transform-origin: bottom;
     transition: transform .25s ease-in;
 }
-.menu-disappear {
-    height: 0;
-    overflow: hidden;
-}
+
 
 .menu li {
     box-sizing:border-box;
@@ -61,16 +64,28 @@ button {
     cursor: pointer;
     margin: 0px;
     border-bottom: 1px solid black;
-    background-color: var(--shade-dark);
-    color: var(--shade-light);
+    background-color: var(--shade-dark);    
 }
 .menu li:last-child {
     border: none;
 }
-.menu li:hover, .menu ul li:focus {
+.menu li a:hover, .menu li a:focus {
     background-color: var(--accent-light);
-    color: var(--shade-dark);
-    text-decoration: underline;
+}
+.menu li a, .menu li a:active{
+    background: none;
+    display:flex;       
+    justify-content: center;
+    color: var(--shade-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity:1;
+    transition: opacity .1s ease-out .15s;
+    height:auto;
+}
+.menu-hidden li a{
+    opacity:0;
+    transition: opacity .1s ease-in;
 }
 
 .btn-hamburger-menu {
@@ -85,7 +100,7 @@ button {
     height: 4px;
     border-radius: 4px;
     background-color: var(--shade-light);
-    transition: all .5s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 .hamburger-icon:before, .hamburger-icon:after {    
     content: '';
@@ -95,7 +110,7 @@ button {
     height: 4px;
     border-radius: 4px;
     left: 0px;
-    transition: all .5s ease-in-out;
+    transition: all .25s ease-in-out;
     opacity: 1;
 }
 .hamburger-icon:before {
@@ -105,16 +120,16 @@ button {
     top: 10px;
 }
 .menu-is-open .hamburger-icon{
-    transition: all .5s ease-in-out;
+    transition: all .25s ease-in-out;
     transform: translateX(-30px);
     background: transparent;
 }
 .menu-is-open .hamburger-icon:before{
-    transition: all .5s ease-in-out;
+    transition: all .25s ease-in-out;
     transform: translate(30px, 10px) rotate(45deg);
 }
 .menu-is-open .hamburger-icon:after{
-    transition: all .5s ease-in-out;
+    transition: all .25s ease-in-out;
     transform: translate(30px, -10px) rotate(-45deg);
 }
 
