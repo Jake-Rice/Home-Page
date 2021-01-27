@@ -4,11 +4,13 @@ function toggleMenu() {
     
     if (!menu_isOpen) {
         document.querySelector("button.btn-hamburger-menu").classList.add("menu-is-open");
+        document.querySelector(".menu").classList.remove("menu-hidden");
         menu_isOpen=true;
     }
     else {
         menu_isOpen = false;
         document.querySelector("button.btn-hamburger-menu").classList.remove("menu-is-open");
+        document.querySelector(".menu").classList.add("menu-hidden");
     }
 }
 
