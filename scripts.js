@@ -3,32 +3,56 @@ let menu_isOpen = false;
 function toggleMenu() {
     
     if (!menu_isOpen) {
+      
+        document.querySelector(".menu").classList.remove("menu-disappear");
         document.querySelector("button.btn-hamburger-menu").classList.add("menu-is-open");
         document.querySelector(".menu").classList.remove("menu-hidden");
         menu_isOpen=true;
     }
     else {
-        menu_isOpen = false;
+        document.querySelector(".menu").classList.remove("menu-disappear");
         document.querySelector("button.btn-hamburger-menu").classList.remove("menu-is-open");
-        document.querySelector(".menu").classList.add("menu-hidden");
+        document.querySelector(".menu").classList.add("menu-hidden");        
+        menu_isOpen = false;
     }
 }
 
 
 
 // Create a condition that targets viewports at least 768px wide
-const mediaQuery = window.matchMedia('(min-width: 768px)')
+const mq_grow = window.matchMedia('(min-width: 768px)')
 
-function handleTabletChange(e) {
+function screenGrow(e) {
   // Check if the media query is true
-  if (menu_isOpen && e.matches) {
+  if (e.matches && document.querySelector(".menu")!=null) {
     // Then log the following message to the console
-    toggleMenu();
+    document.querySelector(".menu").classList.remove("menu-disappear");
+    if(menu_isOpen) toggleMenu();
   }
 }
 
 // Register event listener
-mediaQuery.addListener(handleTabletChange)
+mq_grow.addListener(screenGrow);
 
 // Initial check
-handleTabletChange(mediaQuery)
+screenGrow(mq_grow)
+
+
+
+// Create a condition that targets viewports at most 767px wide
+const mq_shrink = window.matchMedia('(max-width: 767px)')
+
+function screenShrink(e) {
+  // Check if the media query is true
+  if (e.matches && document.querySelector(".menu")!=null) {
+    // Then log the following message to the console
+    document.querySelector(".menu").classList.add("menu-disappear", "menu-hidden");
+    
+  }
+}
+
+// Register event listener
+mq_shrink.addListener(screenShrink);
+
+// Initial check
+screenShrink(mq_shrink)

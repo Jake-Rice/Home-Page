@@ -13,6 +13,11 @@
 body {
     background-color: var(--primary);
     margin-bottom:50px;
+    margin-top:0;
+}
+
+.logo {
+    display: none;
 }
 
 button {
@@ -20,7 +25,7 @@ button {
     cursor:pointer;
 }
 
-.mobile-fixed-nav {
+.fixed-nav {
     display: flex;
     position: fixed;
     height: 50px;
@@ -51,6 +56,11 @@ button {
     transform: scale(1,0);
     transform-origin: bottom;
     transition: transform .25s ease-in;
+}
+.menu-disappear {
+    transform: scale(1,0);
+    transform-origin: bottom;
+    transition:none;
 }
 
 
@@ -91,6 +101,8 @@ button {
 .btn-hamburger-menu {
     width: 50px;
     height: 50px;
+    padding-left: 8px;
+    padding-bottom: 5px;
     background-color: var(--shade-dark);
 }
 
@@ -166,14 +178,66 @@ button {
 
 @media (min-width: 768px) {
     body {
+        margin-top: 50px;
         margin-bottom: 0px;
     }
+
+    .logo {
+        display: inline-block;
+        color: var(--primary);
+        width: 20%;
+        line-height:50px;
+        margin:0;
+        margin-left: 2em;
+        padding:0;
+        top: 0px;
+        height:50px;
+        z-index:9001;
+    }
     
-    .mobile-fixed-nav {
+    .fixed-nav {
+        top: 0;
+        margin-top: 0;
+        background-color: var(--shade-dark);
+    }
+
+    .btn-hamburger-menu{
         display: none;
     }
 
+    .btn-signup {
+        display:none;
+    }
     .menu-hidden {
+        transform: scale(1,1);
         transition: none;
+    }
+    .menu {        
+        align-content: center;
+        cursor: pointer;
+        height: 50px;
+        width: 100%;
+        left:-8px;
+        margin-left:20%;
+        padding:0px;
+        top: 0px;
+        transition: none;
+        z-index: 1000;
+    }
+    .menu li {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        width: auto;
+        opacity: 1;
+        margin-left: 0px;
+        margin-right: -4px;        
+        border-bottom: none;
+    }
+    .menu li a {
+        opacity:1;
+        height: 50px;        
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }
