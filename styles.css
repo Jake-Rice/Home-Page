@@ -163,7 +163,6 @@ button {
     height: 650px;
     margin: 60px auto;
     justify-content: center;
-    background-color: white;
 }
 
 .carousel__view {
@@ -195,11 +194,16 @@ button {
     background-color: transparent;
     border: none;
     outline: none;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     top: 300px;
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 30px;
+    color: var(--shade-dark);
+    opacity: 0.3;
+}
+.carousel__btn:hover, .carousel__btn:focus {
+    opacity: 1;
 }
 
 .carousel__btnPrev {
@@ -220,16 +224,23 @@ button {
 
 .carousel__navDot {
     background-color: var(--shade-dark);
-    opacity: 0.5;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
+    opacity: 0.3;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
     margin: 0px 10px;
     cursor: pointer;
+    transition: all 250ms ease-in;
+}
+.carousel__navDot:focus {
+    outline: none;
+    opacity: 1;
 }
 
 .carousel__navDot_selected {
     opacity: 1;
+    width: 20px;
+    margin: 0px 7px;
 }
 
 /* other stuff */
