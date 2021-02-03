@@ -4,6 +4,7 @@ const track = document.querySelector(".carousel__track");
 const slides = Array.from(track.children);
 const prevButton = document.querySelector(".carousel__btnPrev");
 const nextButton = document.querySelector(".carousel__btnNext");
+if (slides.length < 2) nextButton.style.display = "none";
 const dotNav = document.querySelector(".carousel__nav");
 const navDots = Array.from(dotNav.children);
 
@@ -20,6 +21,20 @@ const jump = (currentSlide, targetSlide, currentDot, targetDot) => {
     targetSlide.classList.add("carousel__item_selected");
     currentDot.classList.remove("carousel__navDot_selected");
     targetDot.classList.add("carousel__navDot_selected");
+    if (slides.length > 1) {
+        if (targetSlide===slides[0]) {
+            prevButton.style.display = "none";
+            nextButton.style.display = "block";
+        }
+        else if (targetSlide===slides[slides.length-1]) {
+            nextButton.style.display = "none";
+            prevButton.style.display = "block";
+        }
+        else {
+            prevButton.style.display = "block";
+            nextButton.style.display = "block";
+        }
+    }
 }
 
 nextButton.addEventListener("click", e => {
@@ -30,6 +45,7 @@ nextButton.addEventListener("click", e => {
         const nextDot = currentDot.nextElementSibling;
         jump(currentSlide, nextSlide, currentDot, nextDot);
     }
+    nextButton.blur();
 });
 
 prevButton.addEventListener("click", e => {
@@ -40,6 +56,7 @@ prevButton.addEventListener("click", e => {
         const prevDot = currentDot.previousElementSibling;
         jump(currentSlide, prevSlide, currentDot, prevDot);
     }
+    prevButton.blur();
 });
 
 dotNav.addEventListener("click", e => {

@@ -208,9 +208,11 @@ button {
 
 .carousel__btnPrev {
     left: 15px;
+    display: none;
 }
 .carousel__btnNext {
     right: 15px;
+    display: block;
 }
 
 .carousel__nav {
