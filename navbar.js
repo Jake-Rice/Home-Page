@@ -1,3 +1,5 @@
+// ============================== Navbar ==============================
+
 let menu_isOpen = false;
 
 function toggleMenu() {
@@ -55,4 +57,6 @@ function screenShrink(e) {
 mq_shrink.addListener(screenShrink);
 
 // Initial check
-screenShrink(mq_shrink)
+screenShrink(mq_shrink);
+
+

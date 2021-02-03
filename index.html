@@ -1,9 +1,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="scripts.js"></script>
 </head>
 
 <body>
+
+    <!--Navbar-->
+
     <nav class="fixed-nav">
         <h1 class="logo">Logo</h1>
         <button class="btn-hamburger-menu" onclick="toggleMenu()">
@@ -28,6 +30,36 @@
         </li>
     </ul>
     
+    <!--Image Carousel-->
+
+    <div class="carousel__container">
+        <button class="carousel__btn carousel__btnPrev">
+            <
+        </button>
+        <div class="carousel__view">
+            <ul class="carousel__track">
+                <li class="carousel__item carousel__item_selected">
+                    <img src="img/img-1.jpg" class="carousel__image" />
+                </li>
+                <li class="carousel__item">
+                    <img src="img/img-2.jpg" class="carousel__image" />
+                </li>
+                <li class="carousel__item">
+                    <img src="img/img-3.jpg" class="carousel__image" />
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__btn carousel__btnNext">
+            >
+        </button>
+        <ul class="carousel__nav">
+            <li class="carousel__navDot carousel__navDot_selected"></li>
+            <li class="carousel__navDot"></li>
+            <li class="carousel__navDot"></li>
+        </ul>
+    </div>
+
+    <!--Other Stuff-->
 
     <div class="primary">
         <p class="text-dark">Some dark text here</p>
@@ -73,4 +105,9 @@
             Pellentesque ipsum ante, faucibus quis ullamcorper vitae, laoreet varius ligula. Fusce a euismod massa. Suspendisse vestibulum tortor congue egestas tincidunt. Sed elementum quis felis sit amet euismod. Vestibulum suscipit imperdiet aliquet. Aliquam id sem velit. Donec orci leo, hendrerit et molestie sit amet, tempor a odio. In iaculis in purus non maximus. Donec fermentum arcu vitae malesuada tempus.
         </p>
     </div>
+
+
+
+    <script src="navbar.js"></script>
+    <script src="carousel.js"></script>
 </body>
