@@ -9,6 +9,7 @@ const dotNav = document.querySelector(".carousel__nav");
 const navDots = Array.from(dotNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
+const viewWidth = document.querySelector(".carousel__view").width;
 
 
 slides.forEach((slide, index) => {

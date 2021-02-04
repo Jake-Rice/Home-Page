@@ -159,25 +159,36 @@ button {
 .carousel__container {
     display: flex;
     position: relative;
-    width: 600px;
-    height: 650px;
-    margin: 60px auto;
+    width:70%;
+    max-width: 600px;
+    min-width: 250px;
+    height: 90%;
+    min-height: 300px;
+    max-height: 650px;
+    margin: 10px auto;
     justify-content: center;
+    background-color: var(--accent-dark)
 }
 
 .carousel__view {
     position: absolute;
     top: 0px;
-    left: 50px;
-    width: 500px;
-    height: 600px;
-    overflow: hidden;
+    margin: 0 auto;
+    height: 90%;
+    width: 90%;
+    max-width: 500px;
+    max-height: 600px;
+    overflow:hidden;
 }
 
 .carousel__track {
+    display: flex;
     list-style: none;
     position: relative;
     height:100%;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
     transition: transform 250ms ease-in-out;
 }
 
@@ -185,18 +196,19 @@ button {
     position: absolute;
 }
 
-.carousel__item_selected {
-    position: absolute;
+.carousel__item img {
 }
+
 
 .carousel__btn {
     position: absolute;
     background-color: transparent;
     border: none;
     outline: none;
-    width: 30px;
+    width: 5%;
+    max-width: 30px;
     height: 30px;
-    top: 300px;
+    top: 45%;
     transform: translateY(-50%);
     font-size: 30px;
     color: var(--shade-dark);
@@ -207,19 +219,19 @@ button {
 }
 
 .carousel__btnPrev {
-    left: 15px;
     display: none;
+    left: 0;
 }
 .carousel__btnNext {
-    right: 15px;
     display: block;
+    right: 0;
 }
 
 .carousel__nav {
     display: flex;
     position: absolute;
     list-style: none;
-    top: 615px;
+    top: 93%;
     width: 100%;
     justify-content: center;
 }
@@ -330,6 +342,11 @@ button {
         height: 50px;        
         padding-left: 2em;
         padding-right: 2em;
+    }
+
+    
+    .carousel__container {
+        margin-top: 60px;
     }
 }
 
