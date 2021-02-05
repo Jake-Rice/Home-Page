@@ -9,14 +9,22 @@ const dotNav = document.querySelector(".carousel__nav");
 const navDots = Array.from(dotNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-const viewWidth = document.querySelector(".carousel__view").width;
 
 
-slides.forEach((slide, index) => {
-    slide.style.left = slideWidth * index + "px";
-});
+const setSize = (newSlideWidth, currentSlide) => {
+        slides.forEach((slide, index) => {
+        slide.style.left = newSlideWidth * index + "px";
+    });
+    track.style.transition = "none";
+    track.style.transform = "translateX(-"+currentSlide.style.left+")";
+    track.style.removeProperty("transition");
+}
+setSize(slideWidth, slides[0]);
 
-const jump = (currentSlide, targetSlide, currentDot, targetDot) => {    
+const jump = (currentSlide, targetSlide, currentDot, targetDot) => {   
+    const newWidth = document.querySelector(".carousel__view").offsetWidth;
+    setSize(newWidth, currentSlide);
+    
     track.style.transform = "translateX(-"+targetSlide.style.left+")";
     currentSlide.classList.remove("carousel__item_selected");
     targetSlide.classList.add("carousel__item_selected");
