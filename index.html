@@ -1,127 +1,154 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!--Navbar-->
-
-    <nav class="fixed-nav">
-        <h1 class="logo">Logo</h1>
-        <button class="btn-hamburger-menu" onclick="toggleMenu()">
-            <div class="hamburger-icon">
-            </div>
-        </button>
-        <button class="btn-signup btn-dark">Sign Up</button>
-    </nav>
-    
-    <ul class="menu menu-hidden menu-disappear">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Pricing</a>
-        </li>
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
-    </ul>
-    
-    <!--Image Carousel-->
-
-    <div class="carousel__container noselect">
-        <button class="carousel__btn carousel__btnPrev">
-            <
-        </button>
-        <div class="carousel__view">
-            <ul class="carousel__track">
-                <li class="carousel__item carousel__item_selected">
-                    <img src="img/img-1.jpg" class="carousel__image" />
+    <div class="nav-container">
+        <nav class="fixed-nav">            
+            <div class="logo">Rice Inc</div>
+            <button class="btn-hamburger-menu" onclick="toggleMenu()">
+                <div class="hamburger-icon">
+                </div>
+            </button>
+            <button class="btn-signup btn-dark">Sign Up</button>
+            <ul class="menu menu-hidden menu-disappear">
+                <li>
+                    <a href="#">Home</a>
                 </li>
-                <li class="carousel__item">
-                    <img src="img/img-2.jpg" class="carousel__image" />
+                <li>
+                    <a href="#">Pricing</a>
                 </li>
-                <li class="carousel__item">
-                    <img src="img/img-3.jpg" class="carousel__image" />
+                <li>
+                    <a href="#">About</a>
                 </li>
-                <li class="carousel__item">
-                    <img src="img/img-4.jpg" class="carousel__image" />
-                </li>
-                <li class="carousel__item">
-                    <img src="img/img-5.jpg" class="carousel__image" />
-                </li>
-                <li class="carousel__item">
-                    <img src="img/img-6.jpg" class="carousel__image" />
-                </li>
-                <li class="carousel__item">
-                    <img src="img/img-7.jpg" class="carousel__image" />
+                <li>
+                    <a href="#">Contact Us</a>
                 </li>
             </ul>
+        </nav>
+        
+    </div>
+    
+    
+
+    <main>
+        <!--Title / Company Description / Image-->
+        <section class="panel">
+            <h2>Rice Industries: A Vision For The Future</h2>
+            <img class="panel-img" src="http://unsplash.it/600/400" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
+
+            <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
+
+            <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
+        </section>
+        <!--Multi-column testimonials and row of company logos-->
+        <section class="panel panel-box">
+            <h2>What People Are Saying About Us</h2>
+            <img class="panel-img" src="http://unsplash.it/600/401" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
+
+            <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
+
+            <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
+        </section>
+
+        <!--Image Carousel-->
+
+        <div class="carousel__container noselect">
+            <button class="carousel__btn carousel__btnPrev">
+                <
+            </button>
+            <div class="carousel__view">
+                <ul class="carousel__track">
+                    <li class="carousel__item carousel__item_selected">
+                        <img src="img/img-1.jpg" class="carousel__image" />
+                    </li>
+                    <li class="carousel__item">
+                        <img src="img/img-2.jpg" class="carousel__image" />
+                    </li>
+                    <li class="carousel__item">
+                        <img src="img/img-3.jpg" class="carousel__image" />
+                    </li>
+                    <li class="carousel__item">
+                        <img src="img/img-4.jpg" class="carousel__image" />
+                    </li>
+                    <li class="carousel__item">
+                        <img src="img/img-5.jpg" class="carousel__image" />
+                    </li>
+                    <li class="carousel__item">
+                        <img src="img/img-6.jpg" class="carousel__image" />
+                    </li>
+                    <li class="carousel__item">
+                        <img src="img/img-7.jpg" class="carousel__image" />
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__btn carousel__btnNext">
+                >
+            </button>
+            <ul class="carousel__nav">
+                <li class="carousel__navDot carousel__navDot_selected" tabindex="0"></li>
+                <li class="carousel__navDot" tabindex="0"></li>
+                <li class="carousel__navDot" tabindex="0"></li>
+                <li class="carousel__navDot" tabindex="0"></li>
+                <li class="carousel__navDot" tabindex="0"></li>
+                <li class="carousel__navDot" tabindex="0"></li>
+                <li class="carousel__navDot" tabindex="0"></li>
+            </ul>
         </div>
-        <button class="carousel__btn carousel__btnNext">
-            >
-        </button>
-        <ul class="carousel__nav">
-            <li class="carousel__navDot carousel__navDot_selected" tabindex="0"></li>
-            <li class="carousel__navDot" tabindex="0"></li>
-            <li class="carousel__navDot" tabindex="0"></li>
-            <li class="carousel__navDot" tabindex="0"></li>
-            <li class="carousel__navDot" tabindex="0"></li>
-            <li class="carousel__navDot" tabindex="0"></li>
-            <li class="carousel__navDot" tabindex="0"></li>
-        </ul>
-    </div>
 
-    <!--Other Stuff-->
+        <!--Other Stuff-->
 
-    <div class="primary">
-        <p class="text-dark">Some dark text here</p>
-        <p class="text-light">Some light text here</p>
-        <button class="btn-dark">Click dark!</button>
-        <button class="btn-light">Click light!</button>
-    </div>
-    <div class="primary">
-        <p class="text-dark">Some dark text here</p>
-        <p class="text-light">Some light text here</p>
-        <button class="btn-dark">Click dark!</button>
-        <button class="btn-light">Click light!</button>
-    </div>
-    <div>
-        <p class="text-dark">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu elit quis ullamcorper. Etiam pellentesque sit amet sapien et venenatis. Vivamus gravida tristique mauris, sed pretium arcu ultrices eu. Nunc non malesuada nisl. Integer posuere ante quis risus faucibus ultricies. Duis pharetra, nibh ornare lacinia elementum, odio eros dignissim orci, ut pulvinar dolor purus sed urna. Aliquam consectetur, ex sit amet dapibus euismod, magna justo egestas purus, at ultrices libero quam a risus. Nulla et orci nec lacus mollis mollis. Nullam viverra ex justo, a ornare nisi lacinia vel. Vestibulum commodo sodales quam et rhoncus.
-        </p>
-        <p class="text-dark">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed scelerisque varius nisi id aliquam. Nam ultrices sem vulputate ante commodo posuere. Morbi non mauris sit amet lacus pellentesque lacinia. Mauris arcu massa, efficitur a erat ut, molestie semper quam. Suspendisse euismod magna id enim bibendum bibendum. Duis suscipit quis est ac vestibulum. Morbi sit amet tincidunt urna, eget tempor dolor. Mauris aliquet sodales posuere. Phasellus malesuada pharetra ante, ac luctus purus bibendum at. Curabitur nulla orci, mollis ac quam tempor, finibus pulvinar metus. Curabitur scelerisque pretium eros, et volutpat tellus aliquet non. Phasellus urna felis, facilisis at purus sit amet, iaculis porta felis. Donec posuere, leo vel tincidunt laoreet, dolor augue commodo neque, sed ullamcorper augue risus sed metus.
-        </p>
-        <p class="text-dark">
-            Donec eu nisl eget ex volutpat euismod eu eget eros. Nulla venenatis tincidunt elit, quis fringilla lorem ultrices at. Pellentesque lobortis libero vitae nibh egestas feugiat. Quisque non dolor vitae nunc interdum scelerisque. Donec hendrerit aliquet tristique. Sed lobortis nibh sit amet ullamcorper tincidunt. Quisque ut arcu diam.
-        </p>
-        <p class="text-dark">
-            In id nibh odio. Praesent quis nibh iaculis, bibendum erat sed, varius turpis. Fusce sollicitudin ornare justo eget imperdiet. Vivamus feugiat, est sit amet pharetra tristique, magna nisl maximus erat, non pulvinar urna magna vitae nisl. Ut placerat imperdiet aliquam. Quisque dignissim iaculis fermentum. In fringilla dapibus tortor, vel venenatis erat efficitur vel. Maecenas mollis vehicula neque, id mollis turpis ullamcorper sit amet. Donec at sapien eu ante eleifend sagittis vestibulum id libero. Praesent faucibus leo ligula, eget lacinia tortor fermentum a. Donec vehicula sollicitudin varius. Ut feugiat bibendum gravida. Sed sit amet faucibus ligula.
-        </p>
-        <p class="text-dark">
-            Pellentesque ipsum ante, faucibus quis ullamcorper vitae, laoreet varius ligula. Fusce a euismod massa. Suspendisse vestibulum tortor congue egestas tincidunt. Sed elementum quis felis sit amet euismod. Vestibulum suscipit imperdiet aliquet. Aliquam id sem velit. Donec orci leo, hendrerit et molestie sit amet, tempor a odio. In iaculis in purus non maximus. Donec fermentum arcu vitae malesuada tempus.
-        </p>
-        <p class="text-dark">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu elit quis ullamcorper. Etiam pellentesque sit amet sapien et venenatis. Vivamus gravida tristique mauris, sed pretium arcu ultrices eu. Nunc non malesuada nisl. Integer posuere ante quis risus faucibus ultricies. Duis pharetra, nibh ornare lacinia elementum, odio eros dignissim orci, ut pulvinar dolor purus sed urna. Aliquam consectetur, ex sit amet dapibus euismod, magna justo egestas purus, at ultrices libero quam a risus. Nulla et orci nec lacus mollis mollis. Nullam viverra ex justo, a ornare nisi lacinia vel. Vestibulum commodo sodales quam et rhoncus.
-        </p>
-        <p class="text-dark">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed scelerisque varius nisi id aliquam. Nam ultrices sem vulputate ante commodo posuere. Morbi non mauris sit amet lacus pellentesque lacinia. Mauris arcu massa, efficitur a erat ut, molestie semper quam. Suspendisse euismod magna id enim bibendum bibendum. Duis suscipit quis est ac vestibulum. Morbi sit amet tincidunt urna, eget tempor dolor. Mauris aliquet sodales posuere. Phasellus malesuada pharetra ante, ac luctus purus bibendum at. Curabitur nulla orci, mollis ac quam tempor, finibus pulvinar metus. Curabitur scelerisque pretium eros, et volutpat tellus aliquet non. Phasellus urna felis, facilisis at purus sit amet, iaculis porta felis. Donec posuere, leo vel tincidunt laoreet, dolor augue commodo neque, sed ullamcorper augue risus sed metus.
-        </p>
-        <p class="text-dark">
-            Donec eu nisl eget ex volutpat euismod eu eget eros. Nulla venenatis tincidunt elit, quis fringilla lorem ultrices at. Pellentesque lobortis libero vitae nibh egestas feugiat. Quisque non dolor vitae nunc interdum scelerisque. Donec hendrerit aliquet tristique. Sed lobortis nibh sit amet ullamcorper tincidunt. Quisque ut arcu diam.
-        </p>
-        <p class="text-dark">
-            In id nibh odio. Praesent quis nibh iaculis, bibendum erat sed, varius turpis. Fusce sollicitudin ornare justo eget imperdiet. Vivamus feugiat, est sit amet pharetra tristique, magna nisl maximus erat, non pulvinar urna magna vitae nisl. Ut placerat imperdiet aliquam. Quisque dignissim iaculis fermentum. In fringilla dapibus tortor, vel venenatis erat efficitur vel. Maecenas mollis vehicula neque, id mollis turpis ullamcorper sit amet. Donec at sapien eu ante eleifend sagittis vestibulum id libero. Praesent faucibus leo ligula, eget lacinia tortor fermentum a. Donec vehicula sollicitudin varius. Ut feugiat bibendum gravida. Sed sit amet faucibus ligula.
-        </p>
-        <p class="text-dark">
-            Pellentesque ipsum ante, faucibus quis ullamcorper vitae, laoreet varius ligula. Fusce a euismod massa. Suspendisse vestibulum tortor congue egestas tincidunt. Sed elementum quis felis sit amet euismod. Vestibulum suscipit imperdiet aliquet. Aliquam id sem velit. Donec orci leo, hendrerit et molestie sit amet, tempor a odio. In iaculis in purus non maximus. Donec fermentum arcu vitae malesuada tempus.
-        </p>
-    </div>
-
+        <div class="primary">
+            <p class="text-dark">Some dark text here</p>
+            <p class="text-light">Some light text here</p>
+            <button class="btn-dark">Click dark!</button>
+            <button class="btn-light">Click light!</button>
+        </div>
+        <div class="primary">
+            <p class="text-dark">Some dark text here</p>
+            <p class="text-light">Some light text here</p>
+            <button class="btn-dark">Click dark!</button>
+            <button class="btn-light">Click light!</button>
+        </div>
+        <div>
+            <p class="text-dark">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu elit quis ullamcorper. Etiam pellentesque sit amet sapien et venenatis. Vivamus gravida tristique mauris, sed pretium arcu ultrices eu. Nunc non malesuada nisl. Integer posuere ante quis risus faucibus ultricies. Duis pharetra, nibh ornare lacinia elementum, odio eros dignissim orci, ut pulvinar dolor purus sed urna. Aliquam consectetur, ex sit amet dapibus euismod, magna justo egestas purus, at ultrices libero quam a risus. Nulla et orci nec lacus mollis mollis. Nullam viverra ex justo, a ornare nisi lacinia vel. Vestibulum commodo sodales quam et rhoncus.
+            </p>
+            <p class="text-dark">
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed scelerisque varius nisi id aliquam. Nam ultrices sem vulputate ante commodo posuere. Morbi non mauris sit amet lacus pellentesque lacinia. Mauris arcu massa, efficitur a erat ut, molestie semper quam. Suspendisse euismod magna id enim bibendum bibendum. Duis suscipit quis est ac vestibulum. Morbi sit amet tincidunt urna, eget tempor dolor. Mauris aliquet sodales posuere. Phasellus malesuada pharetra ante, ac luctus purus bibendum at. Curabitur nulla orci, mollis ac quam tempor, finibus pulvinar metus. Curabitur scelerisque pretium eros, et volutpat tellus aliquet non. Phasellus urna felis, facilisis at purus sit amet, iaculis porta felis. Donec posuere, leo vel tincidunt laoreet, dolor augue commodo neque, sed ullamcorper augue risus sed metus.
+            </p>
+            <p class="text-dark">
+                Donec eu nisl eget ex volutpat euismod eu eget eros. Nulla venenatis tincidunt elit, quis fringilla lorem ultrices at. Pellentesque lobortis libero vitae nibh egestas feugiat. Quisque non dolor vitae nunc interdum scelerisque. Donec hendrerit aliquet tristique. Sed lobortis nibh sit amet ullamcorper tincidunt. Quisque ut arcu diam.
+            </p>
+            <p class="text-dark">
+                In id nibh odio. Praesent quis nibh iaculis, bibendum erat sed, varius turpis. Fusce sollicitudin ornare justo eget imperdiet. Vivamus feugiat, est sit amet pharetra tristique, magna nisl maximus erat, non pulvinar urna magna vitae nisl. Ut placerat imperdiet aliquam. Quisque dignissim iaculis fermentum. In fringilla dapibus tortor, vel venenatis erat efficitur vel. Maecenas mollis vehicula neque, id mollis turpis ullamcorper sit amet. Donec at sapien eu ante eleifend sagittis vestibulum id libero. Praesent faucibus leo ligula, eget lacinia tortor fermentum a. Donec vehicula sollicitudin varius. Ut feugiat bibendum gravida. Sed sit amet faucibus ligula.
+            </p>
+            <p class="text-dark">
+                Pellentesque ipsum ante, faucibus quis ullamcorper vitae, laoreet varius ligula. Fusce a euismod massa. Suspendisse vestibulum tortor congue egestas tincidunt. Sed elementum quis felis sit amet euismod. Vestibulum suscipit imperdiet aliquet. Aliquam id sem velit. Donec orci leo, hendrerit et molestie sit amet, tempor a odio. In iaculis in purus non maximus. Donec fermentum arcu vitae malesuada tempus.
+            </p>
+            <p class="text-dark">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor eu elit quis ullamcorper. Etiam pellentesque sit amet sapien et venenatis. Vivamus gravida tristique mauris, sed pretium arcu ultrices eu. Nunc non malesuada nisl. Integer posuere ante quis risus faucibus ultricies. Duis pharetra, nibh ornare lacinia elementum, odio eros dignissim orci, ut pulvinar dolor purus sed urna. Aliquam consectetur, ex sit amet dapibus euismod, magna justo egestas purus, at ultrices libero quam a risus. Nulla et orci nec lacus mollis mollis. Nullam viverra ex justo, a ornare nisi lacinia vel. Vestibulum commodo sodales quam et rhoncus.
+            </p>
+            <p class="text-dark">
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed scelerisque varius nisi id aliquam. Nam ultrices sem vulputate ante commodo posuere. Morbi non mauris sit amet lacus pellentesque lacinia. Mauris arcu massa, efficitur a erat ut, molestie semper quam. Suspendisse euismod magna id enim bibendum bibendum. Duis suscipit quis est ac vestibulum. Morbi sit amet tincidunt urna, eget tempor dolor. Mauris aliquet sodales posuere. Phasellus malesuada pharetra ante, ac luctus purus bibendum at. Curabitur nulla orci, mollis ac quam tempor, finibus pulvinar metus. Curabitur scelerisque pretium eros, et volutpat tellus aliquet non. Phasellus urna felis, facilisis at purus sit amet, iaculis porta felis. Donec posuere, leo vel tincidunt laoreet, dolor augue commodo neque, sed ullamcorper augue risus sed metus.
+            </p>
+            <p class="text-dark">
+                Donec eu nisl eget ex volutpat euismod eu eget eros. Nulla venenatis tincidunt elit, quis fringilla lorem ultrices at. Pellentesque lobortis libero vitae nibh egestas feugiat. Quisque non dolor vitae nunc interdum scelerisque. Donec hendrerit aliquet tristique. Sed lobortis nibh sit amet ullamcorper tincidunt. Quisque ut arcu diam.
+            </p>
+            <p class="text-dark">
+                In id nibh odio. Praesent quis nibh iaculis, bibendum erat sed, varius turpis. Fusce sollicitudin ornare justo eget imperdiet. Vivamus feugiat, est sit amet pharetra tristique, magna nisl maximus erat, non pulvinar urna magna vitae nisl. Ut placerat imperdiet aliquam. Quisque dignissim iaculis fermentum. In fringilla dapibus tortor, vel venenatis erat efficitur vel. Maecenas mollis vehicula neque, id mollis turpis ullamcorper sit amet. Donec at sapien eu ante eleifend sagittis vestibulum id libero. Praesent faucibus leo ligula, eget lacinia tortor fermentum a. Donec vehicula sollicitudin varius. Ut feugiat bibendum gravida. Sed sit amet faucibus ligula.
+            </p>
+            <p class="text-dark">
+                Pellentesque ipsum ante, faucibus quis ullamcorper vitae, laoreet varius ligula. Fusce a euismod massa. Suspendisse vestibulum tortor congue egestas tincidunt. Sed elementum quis felis sit amet euismod. Vestibulum suscipit imperdiet aliquet. Aliquam id sem velit. Donec orci leo, hendrerit et molestie sit amet, tempor a odio. In iaculis in purus non maximus. Donec fermentum arcu vitae malesuada tempus.
+            </p>
+        </div>
+    </main>
 
 
     <script src="navbar.js"></script>
