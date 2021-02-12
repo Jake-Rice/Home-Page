@@ -20,6 +20,7 @@ const resize = () => {
 }
 
 const setSize = (newSlideWidth, currentSlide) => {
+    console.log(newSlideWidth)
     slides.forEach((slide, index) => {
         slide.style.left = newSlideWidth * index + "px";
     });    
@@ -28,9 +29,6 @@ const setSize = (newSlideWidth, currentSlide) => {
 setSize(slideWidth, slideCurrent);
 
 const jump = (currentSlide, targetSlide, currentDot, targetDot) => {   
-    const newWidth = document.querySelector(".carousel__view").offsetWidth;
-    setSize(newWidth, currentSlide);
-    
     track.style.transform = "translateX(-"+targetSlide.style.left+")";
     currentSlide.classList.remove("carousel__item_selected");
     targetSlide.classList.add("carousel__item_selected");
