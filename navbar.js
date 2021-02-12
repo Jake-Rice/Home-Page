@@ -29,7 +29,8 @@ function screenGrow(e) {
   if (e.matches && document.querySelector(".menu")!=null) {
     // Then log the following message to the console
     document.querySelector(".menu").classList.remove("menu-disappear");
-    if(menu_isOpen) toggleMenu();
+    if (menu_isOpen) toggleMenu();
+    document.querySelector(".btn-signup").classList.remove("btn-navbar");
   }
 }
 
@@ -49,7 +50,7 @@ function screenShrink(e) {
   if (e.matches && document.querySelector(".menu")!=null) {
     // Then log the following message to the console
     document.querySelector(".menu").classList.add("menu-disappear", "menu-hidden");
-    
+    document.querySelector(".btn-signup").classList.add("btn-navbar");
   }
 }
 
@@ -58,5 +59,3 @@ mq_shrink.addEventListener("change", screenShrink);
 
 // Initial check
 screenShrink(mq_shrink);
-
-
