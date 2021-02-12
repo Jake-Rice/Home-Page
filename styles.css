@@ -241,7 +241,7 @@ button {
 .carousel__item {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: calc(100% + 1px);
     opacity: 1;
     transition: opacity 250ms ease-in-out;
 }
