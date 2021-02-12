@@ -22,7 +22,7 @@ function toggleMenu() {
 
 
 // Create a condition that targets viewports at least 768px wide
-const mq_grow = window.matchMedia('(min-width: 768px)')
+const mq_grow = window.matchMedia('(min-width: 768px)');
 
 function screenGrow(e) {
   // Check if the media query is true
@@ -34,15 +34,15 @@ function screenGrow(e) {
 }
 
 // Register event listener
-mq_grow.addListener(screenGrow);
+mq_grow.addEventListener("change", screenGrow);
 
 // Initial check
-screenGrow(mq_grow)
+screenGrow(mq_grow);
 
 
 
 // Create a condition that targets viewports at most 767px wide
-const mq_shrink = window.matchMedia('(max-width: 767px)')
+const mq_shrink = window.matchMedia('(max-width: 767px)');
 
 function screenShrink(e) {
   // Check if the media query is true
@@ -54,7 +54,7 @@ function screenShrink(e) {
 }
 
 // Register event listener
-mq_shrink.addListener(screenShrink);
+mq_shrink.addEventListener("change", screenShrink);
 
 // Initial check
 screenShrink(mq_shrink);
