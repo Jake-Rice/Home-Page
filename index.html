@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onresize="resize()">
 
     <!--Navbar-->
     <div class="nav-container">
@@ -37,71 +37,75 @@
 
     <main>
         <!--Title / Company Description / Image-->
-        <section class="panel">
-            <h2>Rice Industries: A Vision For The Future</h2>
-            <img class="panel-img" src="http://unsplash.it/600/400" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
+        <div class="panel-container panel-container-primary">
+            <section class="panel panel-primary">
+                <h2>Rice Industries: A Vision For The Future</h2>
+                <img class="panel-img" src="http://unsplash.it/600/400" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
 
-            <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
+                <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
 
-            <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
-        </section>
+                <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
+            </section>
+        </div>
         <!--Multi-column testimonials and row of company logos-->
-        <section class="panel panel-box">
-            <h2>What People Are Saying About Us</h2>
-            <img class="panel-img" src="http://unsplash.it/600/401" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
+        <div class="panel-container panel-container-white">
+            <section class="panel panel-white">
+                <h2>What People Are Saying About Us</h2>
+                <img class="panel-img" src="http://unsplash.it/600/401" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
 
-            <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
+                <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
 
-            <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
-        </section>
-
-        <!--Image Carousel-->
-
-        <div class="carousel__container noselect">
-            <button class="carousel__btn carousel__btnPrev">
-                <
-            </button>
-            <div class="carousel__view">
-                <ul class="carousel__track">
-                    <li class="carousel__item carousel__item_selected">
-                        <img src="img/img-1.jpg" class="carousel__image" />
-                    </li>
-                    <li class="carousel__item">
-                        <img src="img/img-2.jpg" class="carousel__image" />
-                    </li>
-                    <li class="carousel__item">
-                        <img src="img/img-3.jpg" class="carousel__image" />
-                    </li>
-                    <li class="carousel__item">
-                        <img src="img/img-4.jpg" class="carousel__image" />
-                    </li>
-                    <li class="carousel__item">
-                        <img src="img/img-5.jpg" class="carousel__image" />
-                    </li>
-                    <li class="carousel__item">
-                        <img src="img/img-6.jpg" class="carousel__image" />
-                    </li>
-                    <li class="carousel__item">
-                        <img src="img/img-7.jpg" class="carousel__image" />
-                    </li>
-                </ul>
-            </div>
-            <button class="carousel__btn carousel__btnNext">
-                >
-            </button>
-            <ul class="carousel__nav">
-                <li class="carousel__navDot carousel__navDot_selected" tabindex="0"></li>
-                <li class="carousel__navDot" tabindex="0"></li>
-                <li class="carousel__navDot" tabindex="0"></li>
-                <li class="carousel__navDot" tabindex="0"></li>
-                <li class="carousel__navDot" tabindex="0"></li>
-                <li class="carousel__navDot" tabindex="0"></li>
-                <li class="carousel__navDot" tabindex="0"></li>
-            </ul>
+                <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
+            </section>
         </div>
 
+        <!--Image Carousel-->
+        <div class="panel-container panel-container-primary">
+            <div class="carousel__container noselect">
+                <button class="carousel__btn carousel__btnPrev">
+                    <
+                </button>
+                <div class="carousel__view">
+                    <ul class="carousel__track track-transition">
+                        <li class="carousel__item carousel__item_selected">
+                            <img src="img/img-1.jpg" class="carousel__image" />
+                        </li>
+                        <li class="carousel__item">
+                            <img src="img/img-2.jpg" class="carousel__image" />
+                        </li>
+                        <li class="carousel__item">
+                            <img src="img/img-3.jpg" class="carousel__image" />
+                        </li>
+                        <li class="carousel__item">
+                            <img src="img/img-4.jpg" class="carousel__image" />
+                        </li>
+                        <li class="carousel__item">
+                            <img src="img/img-5.jpg" class="carousel__image" />
+                        </li>
+                        <li class="carousel__item">
+                            <img src="img/img-6.jpg" class="carousel__image" />
+                        </li>
+                        <li class="carousel__item">
+                            <img src="img/img-7.jpg" class="carousel__image" />
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__btn carousel__btnNext">
+                    >
+                </button>
+                <ul class="carousel__nav">
+                    <li class="carousel__navDot carousel__navDot_selected" tabindex="0"></li>
+                    <li class="carousel__navDot" tabindex="0"></li>
+                    <li class="carousel__navDot" tabindex="0"></li>
+                    <li class="carousel__navDot" tabindex="0"></li>
+                    <li class="carousel__navDot" tabindex="0"></li>
+                    <li class="carousel__navDot" tabindex="0"></li>
+                    <li class="carousel__navDot" tabindex="0"></li>
+                </ul>
+            </div>
+        </div>
         <!--Other Stuff-->
 
         <div class="primary">

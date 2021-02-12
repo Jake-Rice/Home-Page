@@ -2,7 +2,7 @@ Based on https://www.zoho.com/crm/
 Mobile-First Product Homepage
 
 [ ] Clickable Logo/Home link
-[ ] Title/Company Description/Image
+[X] Title/Company Description/Image
 [ ] Multi-column testimonials and row of company logos
 [ ] Sales copy summary with image carousel and link to more info
 [ ] More sales copy with autoplaying muted video clip

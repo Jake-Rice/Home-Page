@@ -14,7 +14,6 @@
 }
 
 body {
-    background-color: var(--primary);
     padding-bottom: 50px;
     padding-top: 0;
 }
@@ -37,17 +36,25 @@ button {
     cursor: pointer;
 }
 
-.panel {
-    margin: 10px;
-    padding: 10px;
+.panel-container {
+    padding: auto;
 }
 
-.panel-box {
+.panel-container-white {
     background-color: white;
-    border-radius: 7px;
-    box-shadow: 7px 7px 10px var(--shadow-color);
 }
-.panel-box h2 {    
+
+.panel-container-primary {    
+    background-color: var(--primary);
+}
+
+.panel {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.panel-white h2 {    
     border-bottom: 1px solid var(--shade-dark);
 }
 
@@ -224,6 +231,10 @@ button {
     height: 100%;
     width: 100%;
     transform: translateX(0);
+    transition: none;    
+}
+
+.track-transition {
     transition: transform 250ms ease-in-out;
 }
 
@@ -336,16 +347,16 @@ button {
     }
 
     .panel {
-        max-width: 1200px;
+        max-width: 1200px;        
     }
 
     .logo {
         display: block;
-        position:absolute;
-        float:left;
+        position: absolute;
+        float: left;
         color: var(--primary);
         width: 10%;
-        line-height:50px;
+        line-height: 50px;
         margin-left: 2em;
         height: 50px;
         z-index: 9001;
@@ -406,8 +417,7 @@ button {
 
 @media (min-width: 1000px) {
     main {
-        max-width: 1200px;
-        margin: auto;
+        padding: auto;
     }
 
     .nav-container {

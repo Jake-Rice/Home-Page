@@ -8,18 +8,24 @@ if (slides.length < 2) nextButton.style.display = "none";
 const dotNav = document.querySelector(".carousel__nav");
 const navDots = Array.from(dotNav.children);
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+let slideCurrent = track.querySelector(".carousel__item_selected");
+let slideWidth = slideCurrent.getBoundingClientRect().width;
 
+const resize = () => {    
+    track.classList.remove("track-transition");
+    slideCurrent = track.querySelector(".carousel__item_selected");
+    slideWidth = slideCurrent.getBoundingClientRect().width;
+    setSize(slideWidth, slideCurrent);
+    setTimeout( () => {track.classList.add("track-transition")}, 1);
+}
 
 const setSize = (newSlideWidth, currentSlide) => {
-        slides.forEach((slide, index) => {
+    slides.forEach((slide, index) => {
         slide.style.left = newSlideWidth * index + "px";
-    });
-    track.style.transition = "none";
-    track.style.transform = "translateX(-"+currentSlide.style.left+")";
-    track.style.removeProperty("transition");
+    });    
+    track.style.transform = "translateX(-"+currentSlide.style.left+")";    
 }
-setSize(slideWidth, slides[0]);
+setSize(slideWidth, slideCurrent);
 
 const jump = (currentSlide, targetSlide, currentDot, targetDot) => {   
     const newWidth = document.querySelector(".carousel__view").offsetWidth;
@@ -45,6 +51,7 @@ const jump = (currentSlide, targetSlide, currentDot, targetDot) => {
         }
     }
 }
+
 
 nextButton.addEventListener("click", e => {
     const currentSlide = track.querySelector(".carousel__item_selected");    
