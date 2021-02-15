@@ -27,7 +27,7 @@ h2 {
 }
 
 p {
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 7px;
 }
 
@@ -75,13 +75,15 @@ button {
 .awards-row {
     display: flex;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .award-card {
-    background-color: pink;
+    position: relative;
     padding: 10px;
     margin: auto;
     width: 50%;
+    max-width: 600px;
 }
 
 .award-img {
@@ -89,14 +91,47 @@ button {
     margin: auto;
 }
 
+.award-text-container {
+    display: block;
+}
 .award-name {
     display: block;
     text-align: center;
+    font-weight: 1000; 
 }
 
 .award-text {
     display: block;
     text-align: center;
+}
+
+.clients-card {
+    box-shadow: 0px 0px 15px -5px lightgray;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.clients-card-title {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: lightgray;
+}
+
+.clients-card-image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 30px;
+}
+
+.client-logo {
+    margin: 5px;
 }
 
 /* navbar */
@@ -384,6 +419,22 @@ button {
 
     .panel {
         max-width: 1200px;        
+    }
+
+    .award-img {
+        display: inline-block;
+    }
+
+    .award-text-container {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    .award-name, .award-text {        
+        text-align: left;
     }
 
     .logo {
