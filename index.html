@@ -10,14 +10,14 @@
     <div class="nav-container">
         <nav class="fixed-nav">            
             <div class="logo">Rice Inc</div>
-            <button class="btn-hamburger-menu" onclick="toggleMenu()">
+            <button class="btn-hamburger-menu" onclick="toggleMenu();">
                 <div class="hamburger-icon">
                 </div>
             </button>
             
             <ul class="menu menu-hidden menu-disappear">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="http://google.com" target="_blank">Home</a>
                 </li>
                 <li>
                     <a href="#">Pricing</a>
@@ -29,38 +29,42 @@
                     <a href="#">Contact Us</a>
                 </li>
             </ul>
-        </nav>
-        
+        </nav>        
     </div>
     
     
 
     <main>
         <!--Title / Company Description / Image-->
-        <div class="panel-container panel-container-primary">
-            <section class="panel panel-primary">
+        <div class="panel-container panel-container-white">
+            <section class="panel">
                 <h2>Rice Industries: A Vision For The Future</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
 
-                <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
-
-                <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
-                
-                <button class="btn-signup btn-dark btn-navbar">Sign Up For Free</button>
+                <button class="btn-signup btn-dark btn-navbar" onclick="this.blur();">Sign Up For Free</button>
                 <img class="panel-img" src="http://unsplash.it/600/400" />                
-            </section>
-        </div>
-        <!--Multi-column testimonials and row of company logos-->
-        <div class="panel-container panel-container-white">
-            <section class="panel panel-white">
-                <h2>What People Are Saying About Us</h2>
-                <img class="panel-img panel-img-left" src="http://unsplash.it/600/401" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare sed nulla quis facilisis. Duis suscipit augue non mi posuere, non vehicula arcu dapibus. Pellentesque ante velit, viverra nec placerat nec, congue a ante. Nam varius tincidunt ex, ut lobortis libero scelerisque et. Nunc tempus tincidunt turpis a hendrerit. Ut faucibus enim ac imperdiet placerat. Quisque enim leo, dignissim et molestie in, viverra sed neque. Nam ultricies nisl et mauris aliquet, et commodo elit consectetur. Morbi eget nulla hendrerit, consequat lorem lacinia, auctor erat. Nunc euismod enim a nunc congue tempus in a risus.</p>
-
-                <p>Maecenas sit amet accumsan metus. In cursus vel tellus non dictum. Duis sed dolor nisi. Nullam mollis risus ac odio euismod, eu tincidunt nulla auctor. Vivamus fringilla, lorem quis convallis mollis, urna nulla lobortis quam, nec tristique sapien ante a libero. Donec tortor leo, malesuada vel pellentesque imperdiet, egestas vel tortor. Morbi aliquet tellus accumsan libero congue consequat sed ac ex. Maecenas ultrices turpis ac nisi aliquam placerat. In vel lorem egestas, tempus sapien sit amet, egestas neque. Integer quis varius tellus. Cras et nunc elit. Cras tincidunt efficitur lorem a rhoncus.</p>
-
-                <p>Donec eget ex auctor, pretium elit id, commodo nibh. In hac habitasse platea dictumst. Nunc sed sem id urna commodo vulputate at nec massa. Nulla aliquam tellus eget arcu iaculis, tristique viverra nisi pretium. Phasellus a tellus sit amet nulla pellentesque egestas. Nunc eget est mauris. Vestibulum aliquam pharetra nisi. Nullam id iaculis ex. Vivamus eu hendrerit purus, ac venenatis sapien. Sed convallis ullamcorper dui id aliquam. Sed vel nibh efficitur, semper ipsum sed, rhoncus sem. Curabitur non nulla nisi. Vestibulum tempus feugiat nibh vitae sollicitudin. Praesent neque leo, tincidunt ac luctus sit amet, rutrum auctor ligula. Aliquam erat volutpat. Integer tempor ligula dapibus sapien semper, eu tempor nulla porta.</p>
+                <!--Awards Section-->
+                <div class="awards-row">
+                    <div class="award-card">
+                        <img class="award-img" src="http://unsplash.it/90/84">
+                        <p class="award-name">
+                            Award 1
+                        </p>
+                        <p class="award-text">
+                            Award text
+                        </p>
+                    </div>
+                    <div class="award-card">
+                        <img class="award-img" src="http://unsplash.it/91/84">
+                        <p class="award-name">
+                            Award 2
+                        </p>
+                        <p class="award-text">
+                            Award text
+                        </p>
+                    </div>
+                </div>
             </section>
         </div>
 

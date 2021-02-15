@@ -52,7 +52,6 @@ button {
     width: 100%;
     padding: 10px;
     margin: auto;
-    min-height: 100%;
 }
 
 .panel-white h2 {    
@@ -71,6 +70,35 @@ button {
     text-transform: uppercase;
 }
 
+/* awards */
+
+.awards-row {
+    display: flex;
+    justify-content: center;
+}
+
+.award-card {
+    background-color: pink;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.award-img {
+    display: block;
+    margin: auto;
+}
+
+.award-name {
+    display: block;
+    text-align: center;
+}
+
+.award-text {
+    display: block;
+    text-align: center;
+}
+
 /* navbar */
 
 .fixed-nav {
@@ -80,6 +108,7 @@ button {
     width: 100%;
     bottom: 0;
     z-index: 100;
+    background-color: green;
 }
 
 .menu {
@@ -196,7 +225,6 @@ button {
     width: 200px;
     height: 50px;
     left: calc(50% - 100px);
-    margin: 20px 0px;
 }
 .btn-navbar {
     position: fixed;
@@ -218,7 +246,7 @@ button {
     height: 90%;
     min-height: 300px;
     max-height: 650px;
-    margin: 10px auto;
+    margin: 0px auto;
     justify-content: center;
 }
 
@@ -371,7 +399,7 @@ button {
     }
     
     .fixed-nav {
-        display:flex;
+        display: flex;
         top: 0;        
         transform: translateY(0px);
         width: 100%;
@@ -381,6 +409,10 @@ button {
 
     .btn-hamburger-menu{
         display: none;
+    }
+
+    .btn-signup {
+        margin: 20px 0px;
     }
 
     .menu-hidden {

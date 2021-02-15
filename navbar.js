@@ -3,7 +3,7 @@
 let menu_isOpen = false;
 
 function toggleMenu() {
-    
+  document.querySelector("button.btn-hamburger-menu").blur();
     if (!menu_isOpen) {
       
         document.querySelector(".menu").classList.remove("menu-disappear");
