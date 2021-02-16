@@ -3,7 +3,7 @@ Mobile-First Product Homepage
 
 [ ] Clickable Logo/Home link
 [X] Title/Company Description/Image
-[ ] Multi-column awards and row of client logos
+[X] Multi-column awards and row of client logos
 [ ] Sales copy summary with image carousel and link to more info
 [ ] More sales copy with autoplaying muted video clip
 [ ] Call to action pane with button link to feature list
